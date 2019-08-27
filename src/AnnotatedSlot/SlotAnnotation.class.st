@@ -1,3 +1,9 @@
+"
+I model extra metadata added to a slot.
+I am quite similar to a Pragma but I work with slots instead of methods.
+
+I am partially polymorphic with Pragma and provide class-side methods to gather annotations similar to the ones provided by Pragma class.
+"
 Class {
 	#name : #SlotAnnotation,
 	#superclass : #Object,

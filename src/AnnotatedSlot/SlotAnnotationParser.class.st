@@ -1,3 +1,15 @@
+"
+I am a small parser dealing with annotation arrays in annotated slots declarations.
+
+I read an annotation or collection of annotations encoded in a symbol or an array and I generate a SlotAnnotation or a collection of SlotAnnotation.
+
+Examples:
+
+SlotAnnotationParser parse: #mypragma.
+SlotAnnotationParser parse: #(#multiple #pragmas).
+SlotAnnotationParser parse: #(my: 1 pragma: 2 with: 3 args: 4).
+SlotAnnotationParser parse: #((my: 1 pragma: 2 with: 3 args: 4) #and #(#other: #pragma)).
+"
 Class {
 	#name : #SlotAnnotationParser,
 	#superclass : #Object,

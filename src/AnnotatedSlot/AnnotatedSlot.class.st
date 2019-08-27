@@ -1,3 +1,12 @@
+"
+I am a slot that can be annotated via SlotAnnotation.
+
+The prefered way to use me is:
+
+#simpleAnnotated annotate: #foo. 
+#annotatedWithArguments annotate: #(#foo: 42 #bar: 'yes' ). 
+#multipleAnnotations annotate: #(#foo #(#foo: 42 #bar: 'yes' ))
+"
 Class {
 	#name : #AnnotatedSlot,
 	#superclass : #InstanceVariableSlot,
