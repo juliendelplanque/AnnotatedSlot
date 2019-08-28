@@ -202,7 +202,7 @@ SlotAnnotation >> selector: anObject [
 
 { #category : #accessing }
 SlotAnnotation >> selectorKeywords [
-	^ (self selector splitOn: $:) allButLast collect: [ :s | s asSymbol asMutator ]
+	^ self selector keywords collect: #asSymbol
 ]
 
 { #category : #sending }
